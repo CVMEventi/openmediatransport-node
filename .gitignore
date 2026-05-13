@@ -49,3 +49,4 @@ node_modules/
 
 # IDE related
 .idea
+.claude
