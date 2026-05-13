@@ -12,6 +12,10 @@
       "cflags!": ["-fno-exceptions"],
       "cflags_cc!": ["-fno-exceptions"],
       "conditions": [
+        ["OS=='linux'", {
+          "sources":  ["src/omt_binding_stub.cpp"],
+          "sources!": ["src/omt_binding.cpp"]
+        }],
         ["OS=='mac'", {
           "include_dirs": ["lib/MacOS"],
           "libraries": ["<(module_root_dir)/lib/MacOS/libomt.dylib"],
