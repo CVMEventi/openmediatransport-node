@@ -1,0 +1,40 @@
+{
+  "name": "openmediatransport",
+  "version": "0.0.1",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "gypfile": true,
+  "scripts": {
+    "install": "node scripts/install.cjs",
+    "build": "node-gyp rebuild",
+    "build:debug": "node-gyp rebuild --debug",
+    "clean": "node-gyp clean",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "omt",
+    "openmediatransport",
+    "ndi",
+    "video",
+    "network"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CVMEventi/openmediatransport-node.git"
+  },
+  "author": "Matteo Piccina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CVMEventi/openmediatransport-node/issues"
+  },
+  "homepage": "https://github.com/CVMEventi/openmediatransport-node#readme",
+  "description": "Node.js bindings for the Open Media Transport (OMT) library",
+  "type": "module",
+  "dependencies": {
+    "node-addon-api": "^8.0.0"
+  },
+  "devDependencies": {
+    "node-gyp": "^10.0.0",
+    "@types/node": "^24.12.4"
+  }
+}
